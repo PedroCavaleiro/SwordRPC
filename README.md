@@ -3,16 +3,8 @@
 [![Swift Version](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat-square)](https://swift.org) [![Tag](https://img.shields.io/github/tag/Azoy/SwordRPC.svg?style=flat-square&label=release&colorB=)](https://github.com/Azoy/SwordRPC/releases)
 
 ## Changes in this fork
-- Added a `disconnect()` function
-  - There seems to be an issue with re`connect()`ing after a `disconnect()`
-  - Workaround is to just create a new `SwordRPC` object
-- Changed timestamps to use integer seconds
-  - The Discord API expects timestamps to be integer, and will behave strangely if passed a non-integer value
-- Presence update requests to the API are made when the presence is changed, instead of every 15 seconds
-  - Presence updates on startup are now much faster
-  - The Discord API handles the 15 second update frequency limit for us
-- Updated some deprecated functions for compatibility with Swift 5
-- Fixed a crash that would occur upon connecting to the Discord API
+- Made JoinRequest public
+- Fix timestamps
 
 ## Requirements
 1. macOS, Linux
