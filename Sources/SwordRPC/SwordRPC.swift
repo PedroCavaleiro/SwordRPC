@@ -50,7 +50,7 @@ public class SwordRPC {
       label: "me.azoy.swordrpc.\(pid)",
       qos: .userInitiated
     )
-    self.encoder.dateEncodingStrategy = .secondsSince1970
+    self.encoder.dateEncodingStrategy = .millisecondsSince1970
 
     self.createSocket()
 
