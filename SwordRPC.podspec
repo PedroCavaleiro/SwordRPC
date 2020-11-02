@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = 'SwordRPC'
-  s.version          = '0.2.0'
+  s.version          = '0.2.4'
   s.summary          = 'A Discord Rich Presence Library for Swift'
-  s.homepage         = 'https://github.com/Azoy/SwordRPC'
+  s.homepage         = 'https://github.com/PedroCavaleiro/SwordRPC'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = 'Azoy'
-  s.source           = { :git => 'https://github.com/Azoy/SwordRPC.git', :tag => s.version }
+  s.source           = { :git => 'https://github.com/PedroCavaleiro/SwordRPC.git', :tag => s.version }
 
   s.osx.deployment_target = '10.11'
   s.pod_target_xcconfig = {
@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
   }
 
   s.source_files = 'Sources/SwordRPC/*.swift', 'Sources/SwordRPC/Types/*.swift'
-  s.dependency 'BlueSocket', '~> 0.12'
+  s.dependency 'BlueSocket', '~> 1.0.200'
 end
